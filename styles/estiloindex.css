@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#divprincipal{
+    overflow-y: hidden;
+    opacity: 0.3;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+background-color: white;
+width: 100%;
+position: relative;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+}
+#mainprincipal{
+    background-color: rgb(255, 230, 206);
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+    
+}
+#mainprincipal i{
+    font-size: 15px;
+}
+#mainsecundario{
+    display: none;
+    background-color: rgb(224, 242, 190);
+}
+
+#divformmensajes {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 70%; 
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+nav{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(255, 237, 125);
+    width: 5%;
+    position: relative;
+}
+section{
+    
+    position: relative;
+}
+button{
+    cursor: pointer;
+}
+#divini{
+    background-color:rgb(174, 138, 248);
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+#partedelmesaje
+{display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    background-color: rgb(255, 238, 180);
+    width: 100%;
+    top: 100%;
+    transform: translateY(-100%);
+}
+#header {
+    background-color: rgba(108, 191, 240, 0.5);
+    cursor: pointer;
+    width: 100%;
+}
+
+#partedelmesaje textarea {
+    resize: none;
+    padding: 10px;
+    width: 75%; 
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    font-size: 16px;
+    line-height: 1.5; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+
+#partedelmesaje textarea:focus {
+    box-shadow: 0 0 10px rgba(241, 241, 241, 0.8); 
+}
+#partedelmesaje button{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    transform: rotate(-30grad);
+    left: 10px;
+    top: 20px;
+    background-color:transparent;
+}
+#partedelmesaje button img:hover,#partedelmesaje button img:focus{
+transform: translate(50%, -25%)  rotate(-30grad);
+}
+#partedelmesaje button img {
+    
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0  ;
+    position: absolute;
+}
+#iniciarsesion{
+
+    z-index: 100;
+    background-color: rgb(255, 166, 125);
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    border: 2px solid black;
+}#divregis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#divregis hr {
+    width: 50%; 
+    margin: 0 10px; 
+}
+#iniciarsesion input{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 2% 4% 2% 4% ;
+}
+.mensaje {
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    max-width: 50%; 
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    border: solid black 1px;
+    transform: translate(80vh, -1%);
+  margin-top: 1%;
+}
+
+.mensaje_remitente{
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    max-width: 50%; 
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+  border: solid black 1px;
+  
+  
+  margin: 10px;
+  transform: translate(0%, -10%);
+}
+#divperfil{
+    overflow: scroll;
+    background-color: rgb(174, 138, 248);
+    overflow-x: hidden;
+    height: 90%;
+    position: absolute;
+    width: 100%;
+
+}
+#barra_de_notificacion{
+    color: white;
+    
+    background-color: grey;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+
+
+ nav button{
+    position: relative;
+    width: 90%;
+    height: 7%;
+    border: none;
+    background-color: black;
+    border-radius: 100%;
+}
+nav button img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    
+    border-radius: 100%;
+    left: 0;
+
+}
+.boton_amigos{
+    width: 100%;
+    background-color: none;
+    border: none;
+    background-color: antiquewhite;
+    transition: 0.5s;
+    
+}
+
+section i{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.boton_amigos:hover{
+    background-color: rgb(255, 204, 192);
+}
+.boton_amigos p{
+    border-radius: 50px;
+    background-color: rgb(137, 237, 63);
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.div_busqueda button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  /* styling of whole input container */
+  .div_busqueda {
+    left: 5px;
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .div_busqueda:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .div_busqueda svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+
+
+
+
+  #contrasena,#telefono,#nombre{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: 255, 246, 199;
+    box-shadow: inset 2px 5px 10px rgba(199, 228, 255.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  #contrasena:focus,#telefono:focus,#nombre:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #d4d4d4,
+               -13px -13px 100px #ffffff;
+  }
+#ingresar,#registro {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  border: 3px solid rgb(255, 239, 94);
+  background-color: rgb(255, 239, 94);
+  box-shadow: 2px 2px 10px rgba(white, white, white, 0.137);
+}
+
+.text {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+
+.arrow path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+#ingresar:active, #registro:active {
+  transform: scale(0.97);
+}
+
+#Registrate,#volverInicio {
+    color: #e1e1e1;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+#Registrate:focus,
+#Registrate:hover,#volverInicio:focus,#volverInicio:hover {
+  color: #fff;
+}
+
+#Registrate:focus:after,
+#Registrate:hover:after,#volverInicio:focus::after,#volverInicio:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+#Registrate:after,#volverInicio::after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
